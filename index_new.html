@@ -1,0 +1,234 @@
+<!-- keyframe carousel -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Amalsut</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="row">
+    <div id="myNav" class="overlay overlay1"></div>
+
+    <div id="myNav2" class="overlay overlay2"></div>
+
+    <div id="myNav3" class="overlay overlay3"></div>
+
+    <div id="myNav4" class="overlay overlay4">
+<!--
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div> -->
+    </div>
+    <div id="overlaymenu" class="overlay">
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="home" class="fullscreen">
+
+    <div id="slide" class="overlay-close right menu-container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+
+    <!-- <span style="font-size:30px;cursor:pointer;color:white;background-color:orange;position:absolute;right:10px;top:10px" onclick="openNav()">&#9776;</span> -->
+
+    <h1 class="text-center" style="color:white">We are</h1>
+
+    <div class="">
+      <div class="container text-center">
+        <div id="carousel-example-vertical" class="carousel vertical slide" data-ride="carousel" data-interval="3000">
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <p class="ticker-headline">
+                Amalsut
+              </p>
+            </div>
+            <div class="item">
+              <p class="ticker-headline">
+                Amalsut
+              </p>
+            </div>
+            <div class="item">
+              <p class="ticker-headline">
+                Amalsut
+              </p>
+            </div>
+            <div class="item">
+              <p class="ticker-headline">
+                Amalsut
+              </p>
+            </div>
+            <div class="item">
+              <p class="ticker-headline">
+                Amalsut
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="second" class="fullscreen">
+    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+  </div>
+
+  <div id="services" class="fullscreen">
+    <h2 class="header red-text text-accent-1">Services</h2>
+
+    <div class="container-fluid">
+      <div class="col-md-3">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front front1">
+              <span class="name red darken-1">Branding</span>
+            </div>
+            <div class="back">
+              <div class="back-title">Branding</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front front2">
+              <span class="name red darken-1">SEO</span>
+            </div>
+            <div class="back">
+              <div class="back-title">SEO</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front front3">
+              <span class="name red darken-1">Package Design</span>
+            </div>
+            <div class="back">
+              <div class="back-title">Package Design</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front front4">
+              <span class="name red darken-1">Brand Consultancy</span>
+            </div>
+            <div class="back">
+              <div class="back-title">Brand Consultancy</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="fourth" class="fullscreen">
+
+  </div>
+
+  <div id="fifth" class="fullscreen">
+
+  </div>
+
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+      $('#myNav').toggleClass('change', 200);
+
+      setTimeout(function() {
+        $('#myNav2').toggleClass('change', 200);
+      }, 200);
+      setTimeout(function() {
+        $('#myNav3').toggleClass('change', 200);
+      }, 400);
+      setTimeout(function() {
+        $('#myNav4').toggleClass('change', 200);
+      }, 600);
+      setTimeout(function() {
+        $('#overlaymenu').toggle('show');
+      }, 600);
+
+    }
+  </script>
+  <!-- <script>
+    function openNav(x) {
+      x.classList.toggle("change");
+
+      document.getElementById("myNav").style.width = "25%";
+      setTimeout(function() {
+        document.getElementById("myNav2").style.width = "25%";
+      }, 200);
+      setTimeout(function() {
+        document.getElementById("myNav3").style.width = "25%";
+      }, 500);
+      setTimeout(function() {
+        document.getElementById("myNav4").style.width = "25%";
+      }, 700);
+      setTimeout(function() {
+        document.getElementById("overlaymenu").style.opacity = "1";
+      }, 700);
+    }
+
+    function closeNav() {
+      document.getElementById("overlaymenu").style.opacity = "0";
+      document.getElementById("myNav").style.width = "0%";
+      setTimeout(function() {
+        document.getElementById("myNav2").style.width = "0%";
+      }, 200);
+      setTimeout(function() {
+        document.getElementById("myNav3").style.width = "0%";
+      }, 500);
+      setTimeout(function() {
+        document.getElementById("myNav4").style.width = "0%";
+      }, 700);
+
+    }
+  </script> -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!-- js carousel -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Amalsut</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style media="screen">
+    .header {
+      margin: 5% auto;
+    }
+
+    .map-responsive {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+    }
+
+    .map-responsive iframe {
+      left: 0;
+      top: 0;
+      height: 80%;
+      width: 100%;
+      position: absolute;
+    }
+  </style>
+
+</head>
+
+<body class="container-fluid">
+
+  <img src="http://placehold.it/150x50" alt="" class="logo img-responsive">
+
+  <div id="slide" class="overlay-close right menu-container" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <div class="row">
+
+    <div id="myNav" class="overlay overlay1"></div>
+
+    <div id="myNav2" class="overlay overlay2"></div>
+
+    <div id="myNav3" class="overlay overlay3"></div>
+
+    <div id="myNav4" class="overlay overlay4"></div>
+
+    <div id="overlaymenu" class="overlay">
+      <div class="overlay-content">
+
+        <div class="col-md-4 col-md-offset-3">
+
+          <a href="index.html">
+            <div class="c--anim-btn">
+              <span class="c-anim-btn">Home</span>
+              <span>Home</span>
+            </div>
+          </a>
+          <a href="about.html">
+            <div class="c--anim-btn">
+              <span class="c-anim-btn">About us</span>
+              <span>About us</span>
+            </div>
+          </a>
+          <a href="service.html">
+            <div class="c--anim-btn">
+              <span class="c-anim-btn">Services</span>
+              <span>Services</span>
+            </div>
+          </a>
+          <a href="portfolio.html">
+            <div class="c--anim-btn">
+              <span class="c-anim-btn">Portfolio</span>
+              <span>Portfolio</span>
+            </div>
+          </a>
+          <a href="contact.html">
+            <div class="c--anim-btn">
+              <span class="c-anim-btn">Contact</span>
+              <span>Contact</span>
+            </div>
+          </a>
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container text-center header">
+    <h1>Our Services</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  <div class="container">
+    <div class="row col-md-10 col-md-offset-1 text-right">
+      <div class="col-md-7">
+        <h2>  Service Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://images.pexels.com/photos/296878/pexels-photo-296878.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="" class="img-responsive">
+      </div>
+    </div>
+
+    <div class="row col-md-10 col-md-offset-1 text-left">
+      <div class="col-md-5">
+        <img src="https://images.pexels.com/photos/4776/man-sunglasses-art-graffiti.jpg?w=940&h=650&auto=compress&cs=tinysrgb" alt="" class="img-responsive">
+      </div>
+      <div class="col-md-7">
+        <h2>  Service Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+
+    <div class="row col-md-10 col-md-offset-1 text-right">
+      <div class="col-md-7">
+        <h2>  Service Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://images.pexels.com/photos/160146/pexels-photo-160146.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="" class="img-responsive">
+      </div>
+    </div>
+
+    <div class="row col-md-10 col-md-offset-1 text-left">
+      <div class="col-md-5">
+        <img src="https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="" class="img-responsive">
+      </div>
+      <div class="col-md-7">
+        <h2>  Service Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+
+    <div class="row col-md-10 col-md-offset-1 text-right">
+      <div class="col-md-7">
+        <h2>  Service Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://images.pexels.com/photos/296878/pexels-photo-296878.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="" class="img-responsive">
+      </div>
+    </div>
+
+    <div class="row col-md-10 col-md-offset-1 text-left">
+      <div class="col-md-5">
+        <img src="https://images.pexels.com/photos/296878/pexels-photo-296878.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="" class="img-responsive">
+      </div>
+      <div class="col-md-7">
+        <h2>  Service Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+
+    <div class="row col-md-10 col-md-offset-1 text-right">
+      <div class="col-md-7">
+        <h2>  Service Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://images.pexels.com/photos/296878/pexels-photo-296878.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="" class="img-responsive">
+      </div>
+    </div>
+
+    <div class="row col-md-10 col-md-offset-1 text-left">
+      <div class="col-md-5">
+        <img src="https://images.pexels.com/photos/296878/pexels-photo-296878.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="" class="img-responsive">
+      </div>
+      <div class="col-md-7">
+        <h2>  Service Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+
+  </div>
+  <footer class="fullscreen container-fluid">
+
+    <div class="row col-md-10 col-md-offset-1">
+      <div class="col-md-3">
+        <h4>Quick Links</h4>
+        <ul class="list-unstyled">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <img src="http://placehold.it/250x75" alt="" class="logo img-responsive">
+        <p>Some tagline about amalsut</p>
+
+      </div>
+
+      <div class="col-md-5">
+        <h4>Find us on</h4>
+        <span class="fa fa-facebook-square fa-2x"></span>
+        <span class="fa fa-twitter-square fa-2x"></span>
+        <span class="fa fa-instagram fa-2x"></span>
+        <span class="fa fa-pinterest-square fa-2x"></span>
+        <span class="fa fa-google-plus-square fa-2x"></span>
+        <span class="fa fa-behance-square fa-2x"></span>
+        <span class="fa fa-linkedin-square fa-2x"></span>
+        <h4>Promise me you'll call</h4>
+        <h5>98989898989</h5>
+        <h4>Or write..</h4>
+        <h5>example@mail.com</h5>
+      </div>
+
+    </div>
+    <div class="row col-md-12 text-center">
+      <br><br>
+      <p>Developed by xargs</p>
+    </div>
+  </footer>
+
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+      $('#myNav').toggleClass('change', 200);
+
+      setTimeout(function() {
+        $('#myNav2').toggleClass('change', 200);
+      }, 200);
+      setTimeout(function() {
+        $('#myNav3').toggleClass('change', 200);
+      }, 400);
+      setTimeout(function() {
+        $('#myNav4').toggleClass('change', 200);
+      }, 600);
+      setTimeout(function() {
+        $('#overlaymenu').toggle('show');
+      }, 600);
+    }
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!-- css carousel  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Amalsut</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+  .flip-container {
+-webkit-perspective: 1000;
+-moz-perspective: 1000;
+-o-perspective: 1000;
+perspective: 1000;
+}
+
+.flip-container, .front, .back {
+/*width: 320px;*/
+height: 480px;
+}
+
+.flipper {
+-moz-transform: perspective(1000px);
+-moz-transform-style: preserve-3d;
+
+position: relative;
+}
+
+.front, .back {
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-o-backface-visibility: hidden;
+backface-visibility: hidden;
+
+-webkit-transition: 0.6s;
+-webkit-transform-style: preserve-3d;
+
+-moz-transition: 0.6s;
+-moz-transform-style: preserve-3d;
+
+-o-transition: 0.6s;
+-o-transform-style: preserve-3d;
+
+-ms-transition: 0.6s;
+-ms-transform-style: preserve-3d;
+
+transition: 0.6s;
+transform-style: preserve-3d;
+
+
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.back {
+-webkit-transform: rotateY(-180deg);
+-moz-transform: rotateY(-180deg);
+-o-transform: rotateY(-180deg);
+-ms-transform: rotateY(-180deg);
+transform: rotateY(-180deg);
+}
+
+.flip-container:hover .back, .flip-container.hover .back {
+-webkit-transform: rotateY(0deg);
+-moz-transform: rotateY(0deg);
+-o-transform: rotateY(0deg);
+-ms-transform: rotateY(0deg);
+transform: rotateY(0deg);
+}
+
+.flip-container:hover .front, .flip-container.hover .front {
+-webkit-transform: rotateY(180deg);
+-moz-transform: rotateY(180deg);
+-o-transform: rotateY(180deg);
+transform: rotateY(180deg);
+}
+
+
+.front {
+z-index: 2;
+}
+    </style>
+
+</head>
+
+<body>
+
+<div class="row container">
+  <div class="col-md-4">
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+    	<div class="flipper">
+    		<div class="front col-md-12" style="background-color:pink">
+    			<!-- front content -->
+          s
+    		</div>
+    		<div class="back col-md-12" style="background-color:maroon">
+    			<!-- back content -->
+          d
+    		</div>
+    	</div>
+    </div>
+
+  </div>
+  <div class="col-md-4">
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+    	<div class="flipper">
+    		<div class="front col-md-12" style="background-color:pink">
+    			<!-- front content -->
+          s
+    		</div>
+    		<div class="back col-md-12" style="background-color:maroon">
+    			<!-- back content -->
+          d
+    		</div>
+    	</div>
+    </div>
+
+  </div>
+  <div class="col-md-4">
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+    	<div class="flipper">
+    		<div class="front col-md-12" style="background-color:pink">
+    			<!-- front content -->
+          s
+    		</div>
+    		<div class="back col-md-12" style="background-color:maroon">
+    			<!-- back content -->
+          d
+    		</div>
+    	</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!--
+  <div id="main">
+    <div class="space"></div>
+  </div>
+
+
+  <div id="vertcar">
+    <h1 class="text-center" style="color:white">We are</h1>
+    <div class="container text-center">
+      <div id="carousel-example-vertical" class="carousel vertical slide" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <p class="ticker-headline">
+              Amalsut
+            </p>
+          </div>
+          <div class="item">
+            <p class="ticker-headline">
+              Amalsut
+            </p>
+          </div>
+          <div class="item">
+            <p class="ticker-headline">
+              Amalsut
+            </p>
+          </div>
+          <div class="item">
+            <p class="ticker-headline">
+              Amalsut
+            </p>
+          </div>
+          <div class="item">
+            <p class="ticker-headline">
+              Amalsut
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+ -->
+
+  <script type="text/javascript">
+    var images = ["Chrysanthemum.jpg", "Desert.jpg", "Hydrangeas.jpg", "Jellyfish.jpg", "Koala.jpg", "Lighthouse.jpg", "Penguins.jpg", "Tulips.jpg"];
+    $(function() {
+      var i = 0;
+      $("#main").css("background-image", "url(images/" + images[i] + ")");
+      setInterval(function() {
+        i++;
+        if (i == images.length) {
+          i = 0;
+        }
+        $("#main").fadeOut(3000, function() {
+          $(this).css("background-image", "url(images/" + images[i] + ")");
+          $(this).fadeIn(1000);
+        });
+      }, 1000);
+    });
+  </script>
+
+</body>
+
+</html>

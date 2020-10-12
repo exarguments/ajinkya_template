@@ -1,0 +1,222 @@
+<!-- js carousel -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Amalsut</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+  <style media="screen">
+    @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+    body {
+      background-color: #eee;
+    }
+
+    h1 {
+      font-size: 15rem
+    }
+
+    /*********** Menu bar**************/
+
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+
+    .show {
+      width: 25%;
+    }
+
+    .overlay1 {
+      left: 0;
+      background-color: #C62828;
+    }
+
+    .overlay2 {
+      right: 0;
+      background-color: #B71C1C;
+    }
+
+    .overlay3 {
+      left: 25%;
+      background-color: #D32F2F;
+    }
+
+    .overlay4 {
+      right: 25%;
+      background-color: #E53935
+    }
+
+    #overlaymenu {
+      position: absolute;
+      z-index: 10;
+      color: #fff;
+    }
+
+    .overlay-content {
+      position: fixed;
+      top: 15%;
+      width: 100%;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #fff;
+      display: none;
+      transition: 0.3s;
+      font-family: 'Bowlby One SC', cursive;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+      color: #ddd;
+    }
+
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      font-size: 60px;
+      z-index: 100
+    }
+
+    @media screen and (max-height: 450px) {
+      .overlay a {
+        font-size: 20px
+      }
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+
+    .menuIcon {
+      display: inline-block;
+      cursor: pointer;
+      height: 50px;
+      width: 50px;
+      z-index: 99;
+      right: 2%;
+      position: fixed;
+      top: 2%
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 40px;
+      height: 5px;
+      background-color: #E53935;
+      margin: 5px 0;
+      transition: 0.5s;
+    }
+
+    .bar2 {
+      width: 30px;
+      margin: auto;
+    }
+
+    .show .bar1 {
+      -webkit-transform: rotate(-45deg) translate(0px, 10px);
+      transform: rotate(-45deg) translate(0px, 10px);
+      background-color: #fff
+    }
+
+    .show .bar2 {
+      -webkit-transform: rotate(45deg) translate(0px, 0px);
+      transform: rotate(45deg) translate(0px, 0px);
+      background-color: #fff
+    }
+
+    .show .bar3 {
+      display: none
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="right menuIcon" onclick="showFullScreenMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <div class="row">
+
+    <div class="overlay overlay1"></div>
+
+    <div class="overlay overlay2"></div>
+
+    <div class="overlay overlay3"></div>
+
+    <div class="overlay overlay4"></div>
+
+    <div id="overlaymenu" class="overlay">
+      <div class="overlay-content">
+        <ul class="col-md-3 col-md-offset-3">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="container">
+
+    <br><br>
+    <h1><b>Namaste!</b></h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  </div>
+
+
+  <script>
+    function showFullScreenMenu(x) {
+      x.classList.toggle("show");
+
+      $('.overlay1').toggleClass('show', 200);
+
+      setTimeout(function() {
+        $('.overlay2').toggleClass('show', 200);
+      }, 200);
+      setTimeout(function() {
+        $('.overlay3').toggleClass('show', 200);
+      }, 400);
+      setTimeout(function() {
+        $('.overlay4').toggleClass('show', 200);
+      }, 600);
+      setTimeout(function() {
+        $("#overlaymenu a").fadeToggle(150);
+      }, 450);
+    }
+  </script>
+
+</body>
+
+</html>

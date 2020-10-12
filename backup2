@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Amalsut</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    html,body {
+      height: 100%;
+      width: 100%;
+      margin: 0
+    }
+
+    #main{
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .ticker-headline {
+        overflow: hidden;
+        /*text-overflow: ellipsis;*/
+        /*white-space: nowrap;*/
+        word-wrap: break-word;
+        padding: 0;
+        margin: 0;
+    }
+
+    .ticker-headline {
+        font-size: 10vh;
+        font-weight: 600!important;
+        color: white
+    }
+
+    .carousel.vertical .carousel-inner {
+        height: 100%;
+        width: auto;
+    }
+
+    .carousel.vertical .carousel-inner>.item {
+        width: auto;
+        -webkit-transition: 0.6s ease-in-out top;
+        transition: 0.6s ease-in-out top;
+    }
+
+    @media all and (transform-3d), (-webkit-transform-3d) {
+        .carousel.vertical .carousel-inner>.item {
+            -webkit-transition: 0.6s ease-in-out;
+            transition: 0.6s ease-in-out;
+        }
+        .carousel.vertical .carousel-inner>.item.next, .carousel.vertical .carousel-inner>.item.active.right {
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+            top: 0;
+        }
+        .carousel.vertical .carousel-inner>.item.prev, .carousel.vertical .carousel-inner>.item.active.left {
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+            top: 0;
+        }
+        .carousel.vertical .carousel-inner>.item.next.left, .carousel.vertical .carousel-inner>.item.prev.right, .carousel.vertical .carousel-inner>.item.active {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            top: 0;
+        }
+    }
+
+    .carousel.vertical .carousel-inner>.active, .carousel.vertical .carousel-inner>.next, .carousel.vertical .carousel-inner>.prev {
+        display: block;
+    }
+
+    .carousel.vertical .carousel-inner>.active {
+        top: 0;
+    }
+
+    .carousel.vertical .carousel-inner>.next, .carousel.vertical .carousel-inner>.prev {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div id="main">
+<!--
+    <h1 class="text-center" style="color:white">We are</h1>
+
+    <div class="">
+      <div class="container text-center">
+        <div id="carousel-example-vertical" class="carousel vertical slide" data-ride="carousel" data-interval="3000">
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <p class="ticker-headline">
+                Amalsut
+              </p>
+            </div>
+            <div class="item">
+              <p class="ticker-headline">
+                Amalsut
+              </p>
+            </div>
+            <div class="item">
+              <p class="ticker-headline">
+                Amalsut
+              </p>
+            </div>
+            <div class="item">
+              <p class="ticker-headline">
+                Amalsut
+              </p>
+            </div>
+            <div class="item">
+              <p class="ticker-headline">
+                Amalsut
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div> -->
+
+
+  </div>
+
+
+  <script type="text/javascript">
+    $(function() {
+      var body = $('#main');
+      var backgrounds = [
+        'url(https://images.pexels.com/photos/1300/city-marketing-lights-night.jpg?w=940&h=650&auto=compress&cs=tinysrgb)',
+        'url(https://images.pexels.com/photos/199830/pexels-photo-199830.jpeg?w=940&h=650&auto=compress&cs=tinysrgb)',
+        'url(https://images.pexels.com/photos/185706/pexels-photo-185706.jpeg?w=940&h=650&auto=compress&cs=tinysrgb)'
+      ];
+      var current = 0;
+
+      function nextBackground() {
+        body.css(
+          'background',
+          backgrounds[current = ++current % backgrounds.length]
+        );
+        body.css('background-size','cover');
+        setTimeout(nextBackground, 1000);
+      }
+      setTimeout(nextBackground, 1000);
+      body.css('background-size','cover');
+    });
+
+
+    // $(document).ready(function(){
+    //
+    // $("#main").css('background-image','url(https://images.pexels.com/photos/1721/people-train-public-transportation-hurry.jpg?w=940&h=650&auto=compress&cs=tinysrgb)');
+    // $("#main").css('background-image','url(https://images.pexels.com/photos/185706/pexels-photo-185706.jpeg?w=940&h=650&auto=compress&cs=tinysrgb)');
+    //
+    // });
+  </script>
+
+</body>
+
+</html>
